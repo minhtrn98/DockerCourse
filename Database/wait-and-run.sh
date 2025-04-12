@@ -11,6 +11,7 @@
 #
 # I've updated this script with both of those fixes.
 
+
 # Wait for SQL Server to be ready
 echo "Waiting for SQL Server to be ready..."
 for i in {1..50};
