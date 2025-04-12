@@ -12,7 +12,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 EXPOSE 80
 EXPOSE 443
 ENV ASPNETCORE_HTTP_PORTS=80
-ENV ASPNETCORE_HTTPS_PORTS=443
 WORKDIR /app
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "DockerCourseApi.dll"]
